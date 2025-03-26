@@ -1,82 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Priyanka Massage Parlour</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Massage Parlour - Relax & Rejuvenate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">Priyanka Massage Parlour</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </nav>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Priyanka <span>Massage</span></h1>
+                <p>Relaxation & Wellness</p>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#therapists">Therapists</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+            <button class="book-now-btn" id="bookNowBtn">Book Now</button>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Priyanka Massage Parlour</h1>
-      <p>Your wellness and relaxation journey starts here. Let us take care of you!</p>
-      <a href="#services" class="btn">Explore Our Services</a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Experience Ultimate Relaxation</h2>
+                <p>Professional massage therapies tailored to your needs in a serene environment</p>
+                <a href="#booking" class="btn">Book Your Session</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Swedish Massage</h3>
+                    <p>A gentle, relaxing massage that improves circulation and relieves muscle tension.</p>
+                    <span class="price">₹1,500 / 60min</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Deep Tissue</h3>
+                    <p>Targets deeper layers of muscle to relieve chronic pain and muscle tightness.</p>
+                    <span class="price">₹2,000 / 60min</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Hot Stone Therapy</h3>
+                    <p>Warm stones melt away tension, improve circulation and promote deep relaxation.</p>
+                    <span class="price">₹2,500 / 60min</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Aromatherapy</h3>
+                    <p>Essential oils enhance the massage experience with their healing properties.</p>
+                    <span class="price">₹1,800 / 60min</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About Priyanka Massage Parlour</h2>
+                <p>Founded in 2010, Priyanka Massage Parlour has been providing exceptional massage therapies to clients seeking relaxation, pain relief, and overall wellness. Our team of certified therapists are dedicated to creating a personalized experience for each client.</p>
+                <p>We believe in the healing power of touch and create a tranquil environment where you can escape the stresses of daily life and focus on your wellbeing.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="number">12+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">5,000+</span>
+                        <span class="label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">8</span>
+                        <span class="label">Certified Therapists</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Massage room">
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapists Section -->
+    <section class="therapists" id="therapists">
+        <div class="container">
+            <h2 class="section-title">Our Therapists</h2>
+            <div class="therapists-grid">
+                <div class="therapist-card">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Therapist 1">
+                    <h3>Priyanka Sharma</h3>
+                    <p class="specialty">Swedish & Aromatherapy</p>
+                    <p class="bio">With 10 years of experience, Priyanka specializes in relaxation techniques.</p>
+                </div>
+                <div class="therapist-card">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Therapist 2">
+                    <h3>Rahul Verma</h3>
+                    <p class="specialty">Deep Tissue & Sports</p>
+                    <p class="bio">Rahul focuses on therapeutic massage for pain relief and recovery.</p>
+                </div>
+                <div class="therapist-card">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Therapist 3">
+                    <h3>Neha Patel</h3>
+                    <p class="specialty">Hot Stone & Prenatal</p>
+                    <p class="bio">Neha creates customized treatments for each client's unique needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <p>"The best massage experience I've ever had! Priyanka's hands are magical. I left feeling completely rejuvenated."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client 1">
+                        <div>
+                            <h4>Anjali Mehta</h4>
+                            <span>Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"After just one session of deep tissue massage, my chronic back pain was significantly reduced. Highly recommend!"</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client 2">
+                        <div>
+                            <h4>Rajiv Khanna</h4>
+                            <span>First-time Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The ambiance is so peaceful, and the therapists are professional and attentive. My monthly visit is my self-care ritual."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client 3">
+                        <div>
+                            <h4>Sunita Reddy</h4>
+                            <span>Long-term Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Appointment</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="Swedish Massage">Swedish Massage</option>
+                        <option value="Deep Tissue">Deep Tissue</option>
+                        <option value="Hot Stone Therapy">Hot Stone Therapy</option>
+                        <option value="Aromatherapy">Aromatherapy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="therapist">Preferred Therapist (Optional)</label>
+                    <select id="therapist" name="therapist">
+                        <option value="">No Preference</option>
+                        <option value="Priyanka Sharma">Priyanka Sharma</option>
+                        <option value="Rahul Verma">Rahul Verma</option>
+                        <option value="Neha Patel">Neha Patel</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Special Requests</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Wellness Street, Mumbai, Maharashtra 400001</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@priyankamassage.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Open Daily: 10:00 AM - 8:00 PM</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.263316036986!2d72.82231431490093!3d19.05575898710184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8df0a854749%3A0xe3a6d7e8a3f6b3e5!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Priyanka <span>Massage</span></h3>
+                    <p>Your journey to relaxation begins here</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#therapists">Therapists</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Swedish Massage</a></li>
+                        <li><a href="#">Deep Tissue</a></li>
+                        <li><a href="#">Hot Stone Therapy</a></li>
+                        <li><a href="#">Aromatherapy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and wellness tips</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Priyanka Massage Parlour. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Book Your Appointment</h2>
+            <form id="quickBookingForm">
+                <div class="form-group">
+                    <label for="quickName">Full Name</label>
+                    <input type="text" id="quickName" name="quickName" required>
+                </div>
+                <div class="form-group">
+                    <label for="quickPhone">Phone Number</label>
+                    <input type="tel" id="quickPhone" name="quickPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="quickDate">Preferred Date</label>
+                    <input type="date" id="quickDate" name="quickDate" required>
+                </div>
+                <button type="submit" class="btn">Request Call Back</button>
+            </form>
+        </div>
     </div>
-  </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="services-heading">
-      <h2>Our Services</h2>
-      <p>Choose from a range of revitalizing massages for ultimate relaxation.</p>
+    <!-- Success Modal -->
+    <div class="modal success-modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Booking Request Sent!</h2>
+            <p>We've received your booking request and will contact you shortly to confirm your appointment.</p>
+            <button class="btn close-success-modal">OK</button>
+        </div>
     </div>
-    <div class="service-cards">
-      <div class="card">
-        <img src="swedish-massage.jpg" alt="Swedish Massage" />
-        <h3>Swedish Massage</h3>
-        <p>A soothing experience that improves circulation and eases tension.</p>
-      </div>
-      <div class="card">
-        <img src="deep-tissue-massage.jpg" alt="Deep Tissue Massage" />
-        <h3>Deep Tissue Massage</h3>
-        <p>Targets deep muscle layers to relieve chronic pain and stiffness.</p>
-      </div>
-      <div class="card">
-        <img src="hot-stone-massage.jpg" alt="Hot Stone Massage" />
-        <h3>Hot Stone Massage</h3>
-        <p>Experience deep relaxation with the soothing warmth of heated stones.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>At Priyanka Massage Parlour, we are dedicated to providing you with a holistic experience aimed at rejuvenating your body and mind. Our skilled therapists offer a range of services to help you unwind and heal naturally.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>For bookings or inquiries, please fill out the form below or reach out to us.</p>
-    <form action="#" method="POST">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Priyanka Massage Parlour. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
